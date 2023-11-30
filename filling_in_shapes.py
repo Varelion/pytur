@@ -13,7 +13,7 @@ circle(30)
 end_fill()
 
 right(90)
-forward(100)
+foward(100)
 
 begin_fill()
 color("purple")
