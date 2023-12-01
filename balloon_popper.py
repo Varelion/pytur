@@ -3,7 +3,8 @@ from turtle import *
 #  Start -> Draw Ballowwn -> up key pressed -> balloon at max size? pop : inflate -> clear balloon white "POP"!
 
 balloon_diameter = 40
-pop_diameter = 100
+pop_diameter = 200
+bgcolor("black")
 
 def draw_balloon():
 	color("red")
@@ -15,9 +16,9 @@ def inflate_balloon():
 	if (balloon_diameter < pop_diameter):
 		return draw_balloon()
 	else:
-		color("white")
-		dot(balloon_diameter+1)
-		return print("POP!")
+		bgcolor("white")
+		clear()
+		return write("POP!")
 
 def pop():
 	return False
